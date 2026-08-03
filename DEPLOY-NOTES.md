@@ -1,6 +1,6 @@
 # NC-02 FreeHush — deploy checklist
 
-1. **Domain** — replace `freehush.example` in sitemap.xml, robots.txt and the
+1. **Domain** ✅ freehush.com (set 2026-08-03). — replace `freehush.example` in sitemap.xml, robots.txt and the
    `crew@freehush.example` address (contact, privacy, terms).
 2. **Affiliate redirects → 301s** (config inside each stub):
    - /go/krisp/ → Impact tracking URL (Krisp program)

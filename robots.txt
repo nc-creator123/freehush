@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /go/
 
-Sitemap: https://freehush.example/sitemap.xml
+Sitemap: https://freehush.com/sitemap.xml
