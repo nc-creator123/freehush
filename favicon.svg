@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="FreeHush">
+  <rect x="2.5" y="2.5" width="59" height="59" rx="14" fill="#1f9d55" stroke="#22261f" stroke-width="4"/>
+  <path d="M10 32 C 14 21, 18 43, 22 32 C 25 24, 28 40, 31 32 L 54 32"
+        fill="none" stroke="#faf7f0" stroke-width="4.6" stroke-linecap="round"/>
+</svg>

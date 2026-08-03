@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Audacity Noise Reduction: Free Forever, Honestly | FreeHush</title>
+<meta name="description" content="Audacity's noise reduction is completely free — no account, no limits, no catch except effort. How the two-pass profile method works and where it struggles.">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+<link rel="stylesheet" href="../../styles.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "Audacity Noise Reduction: Completely Free, Slightly Manual",
+ "author": {
+  "@type": "Organization",
+  "name": "FreeHush",
+  "url": "../../about/"
+ },
+ "datePublished": "2026-07-28",
+ "dateModified": "2026-07-28"
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Is Audacity really free, or free-with-a-catch?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Really free — open-source software maintained by a community, no accounts, no tiers, no upsell screen. The only costs are your time and the learning curve."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Can Audacity remove background noise from a live call?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "No — it edits files after recording. For live meetings you need a real-time tool: your meeting app's built-in suppression, Krisp, or NVIDIA Broadcast on RTX hardware."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Why does my voice sound underwater after noise reduction?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Over-reduction. Spectral subtraction taken too far removes parts of the voice with the noise, producing the bubbly artefact. Use a lower reduction amount, and make sure your noise profile really was noise-only — a profile containing speech ruins the pass."
+   }
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<header class="hd">
+  <div class="shell">
+    <a class="logo-fh" href="../../index.html"><img src="../../favicon.svg" alt=""><b>Free<em>Hush</em></b></a>
+    <nav>
+      <div class="ndrop">
+        <a class="ndrop-top" href="../../best-free/desktop-noise-cancellation/index.html">Desktop picks <span class="car">▾</span></a>
+        <div class="nmenu">
+          <a class="all" href="../../best-free/desktop-noise-cancellation/index.html">★ The full desktop ranking</a>
+          <a href="../../free-tools/krisp-free/index.html">Krisp Free</a>
+          <a href="../../free-tools/nvidia-broadcast/index.html">NVIDIA Broadcast</a>
+          <a href="../../free-tools/obs-noise-suppression/index.html">OBS noise filter</a>
+          <a href="../../free-tools/audacity-noise-reduction/index.html">Audacity</a>
+        </div>
+      </div>
+      <div class="ndrop">
+        <a class="ndrop-top" href="../../best-free/online-noise-removers/index.html">Online tools <span class="car">▾</span></a>
+        <div class="nmenu">
+          <a class="all" href="../../best-free/online-noise-removers/index.html">★ The full online ranking</a>
+          <a href="../../free-tools/adobe-podcast-enhance/index.html">Adobe Podcast Enhance</a>
+          <a href="../../free-tools/auphonic/index.html">Auphonic</a>
+        </div>
+      </div>
+      <a href="../../blog/index.html">Blog</a>
+      <a href="../../about/index.html">About</a>
+      <a class="money" href="../../free-vs-paid/index.html">Free vs Paid</a>
+    </nav>
+  </div>
+</header>
+
+<div class="slim">
+  <div class="bcrumb"><a href="../../index.html">Home</a> / Free tools / Audacity</div>
+  <article class="rv">
+    <div class="rvlogo"><span class="tlogo" style="background:#2f5da8"><svg viewBox="0 0 32 32"><path d="M7 20a9 9 0 0 1 18 0" fill="none" stroke="#fff" stroke-width="2.8" stroke-linecap="round"/><rect x="4.6" y="18.5" width="4.6" height="8.5" rx="2.2" fill="#fff" stroke="#22261f" stroke-width="1.2"/><rect x="22.8" y="18.5" width="4.6" height="8.5" rx="2.2" fill="#fff" stroke="#22261f" stroke-width="1.2"/><path d="M11.5 23l2-3.4 2 6 2-7.4 2 5.6 1.6-2.8" fill="none" stroke="#ff7b1c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+    <h1>Audacity Noise Reduction: Completely Free, Slightly Manual</h1>
+    <p class="byline">By <b>the FreeHush crew</b> · Published July 28, 2026 · Last updated July 28, 2026</p>
+    
+    <div class="vbox">
+      <div class="limitbar"><span class="pill free">100% free, forever</span><span class="pill free">No account</span><span class="pill free">Win / Mac / Linux</span><span class="pill warn">Recordings only, manual</span></div>
+      <p>Audacity is the control group for this whole site: <strong>genuinely, structurally free</strong> — open source, no account, no tiers, no counter ticking anywhere. Its Noise Reduction effect works on recordings via a two-pass method: teach it a few seconds of noise-only audio, then let it subtract that fingerprint from the whole track. On steady noise — hiss, hum, fans, aircon — it's quietly excellent. On voices, traffic, and anything that changes moment to moment, it's the wrong kind of tool, and turning it up doesn't fix that; it just makes your voice sound underwater.</p>
+    </div>
+    <span class="checkedon">Behaviour described from Audacity's official manual for the current release — July 28, 2026.</span>
+
+    <h2>Free vs paid — wrong question here</h2>
+    <p>There's no paid Audacity and never has been. The real trade is money for effort:</p>
+    <table class="fp">
+      <tr><th></th><th>Audacity</th></tr>
+      <tr><td>Price, ever</td><td class="yes">$0 — open source (GPL)</td></tr>
+      <tr><td>Usage limits, accounts, watermarks</td><td class="yes">None</td></tr>
+      <tr><td>Works on</td><td>Recorded files (destructive edit), not live calls</td></tr>
+      <tr><td>Best against</td><td class="yes">Constant noise: hiss, hum, fan, aircon</td></tr>
+      <tr><td>Weak against</td><td class="no">Changing noise: voices, traffic, clatter</td></tr>
+      <tr><td>Skill cost</td><td class="no">Ten minutes to learn, a lifetime to stop overdoing it</td></tr>
+    </table>
+
+    <h2>How it holds up</h2>
+    <p>From the manual and the algorithm's design — the honest shape of a spectral-subtraction tool:</p>
+    <p><strong>Against steady background noise:</strong> this is the home game. Because you hand it an exact sample of <em>your</em> noise, it removes precisely that — often more surgically than one-click AI tools, which have to guess. Interview recorded next to a humming fridge? Two minutes in Audacity beats most web tools.</p>
+    <p><strong>Against variable noise:</strong> the profile method assumes the noise at minute one matches the noise at minute ten. Voices, passing cars and keyboard bursts don't cooperate, and pushing the reduction slider harder introduces the classic bubbling, metallic artefacts every Audacity user eventually meets.</p>
+    <p><strong>What to check on your own file:</strong> after processing, listen to the quiet gaps between sentences at high volume — that's where over-reduction announces itself first. If the gaps sound like they're underwater, undo and lower the dB setting.</p>
+    <div class="catch"><b>The catch:</b> edits are destructive — the effect rewrites the track. Duplicate the track (or keep the original file) before applying, every time. Future-you says thanks.</div>
+
+    <h2>The two-pass method, step by step</h2>
+    <ol>
+      <li>Open your recording in Audacity and find a stretch of <strong>noise only</strong> — a few seconds where nobody speaks.</li>
+      <li>Select that stretch, then run <strong>Effect → Noise Removal and Repair → Noise Reduction</strong> and click <strong>Get Noise Profile</strong>.</li>
+      <li>Select the whole track (<strong>Ctrl/Cmd+A</strong>).</li>
+      <li>Open the effect again; start moderate — Noise Reduction around 10–12 dB — and use <strong>Preview</strong>.</li>
+      <li>Apply, listen to the between-speech gaps, and re-do with gentler settings if the voice got waterlogged.</li>
+    </ol>
+
+    <h2>When you'll outgrow it</h2>
+    <p>Audacity never expires — but three situations push people onward:</p>
+    <ul>
+      <li><strong>Live calls are your actual problem</strong> — Audacity can't help; that's virtual-mic territory (Krisp, NVIDIA Broadcast).</li>
+      <li><strong>Volume</strong> — cleaning one file is craft; cleaning every episode is a chore that upload tools (Adobe Enhance, Auphonic) automate away.</li>
+      <li><strong>Variable noise keeps beating you</strong> — the AI tools' models handle changing noise fundamentally better than a static profile can.</li>
+    </ul>
+
+    <h2>Quick questions</h2>
+    <div class="faq2">
+      <details>
+        <summary>Is Audacity really free, or free-with-a-catch?</summary>
+        <p>Really free — open-source software maintained by a community, no accounts, no tiers, no upsell screen. The only costs are your time and the learning curve.</p>
+      </details>
+      <details>
+        <summary>Can Audacity remove background noise from a live call?</summary>
+        <p>No — it edits files after recording. For live meetings you need a real-time tool: your meeting app's built-in suppression, Krisp, or NVIDIA Broadcast on RTX hardware.</p>
+      </details>
+      <details>
+        <summary>Why does my voice sound underwater after noise reduction?</summary>
+        <p>Over-reduction. Spectral subtraction taken too far removes parts of the voice with the noise, producing the bubbly artefact. Use a lower reduction amount, and make sure your noise profile really was noise-only — a profile containing speech ruins the pass.</p>
+      </details>
+    </div>
+
+    <div class="rel">
+      <h2>Keep reading</h2>
+      <ul>
+        <li><a href="../adobe-podcast-enhance/index.html">Adobe Podcast Enhance: one-click cleanup, one free hour a day</a></li>
+        <li><a href="../auphonic/index.html">Auphonic: automated post-production, 2 free hrs/month</a></li>
+        <li><a href="../../best-free/online-noise-removers/index.html">Best free online background-noise removers</a></li>
+      </ul>
+    </div>
+  </article>
+</div>
+
+<footer class="ft">
+  <div class="shell">
+    <div>
+      <a class="logo-fh" href="../../index.html"><img src="../../favicon.svg" alt="" style="width:24px;height:24px"><b>Free<em>Hush</em></b></a>
+      <p class="blurb" style="margin-top:10px">Noise-cancellation tools with genuinely usable free tiers — limits stated up front, no trials dressed up as free.</p>
+    </div>
+    <div>
+      <h4>Free tool reviews</h4>
+      <ul>
+        <li><a href="../../free-tools/krisp-free/index.html">Krisp Free</a></li>
+        <li><a href="../../free-tools/nvidia-broadcast/index.html">NVIDIA Broadcast</a></li>
+        <li><a href="../../free-tools/adobe-podcast-enhance/index.html">Adobe Podcast Enhance</a></li>
+        <li><a href="../../free-tools/audacity-noise-reduction/index.html">Audacity</a></li>
+        <li><a href="../../free-tools/obs-noise-suppression/index.html">OBS filter</a></li>
+        <li><a href="../../free-tools/auphonic/index.html">Auphonic</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Site</h4>
+      <ul>
+        <li><a href="../../best-free/desktop-noise-cancellation/index.html">Best free desktop tools</a></li>
+        <li><a href="../../best-free/online-noise-removers/index.html">Best online removers</a></li>
+        <li><a href="../../free-vs-paid/index.html">Free vs paid</a></li>
+        <li><a href="../../about/index.html">About &amp; how we check</a></li>
+        <li><a href="../../contact/index.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="tail">
+      <span>© 2026 FreeHush · <a href="../../privacy/index.html">Privacy</a> · <a href="../../terms/index.html">Terms &amp; affiliate disclosure</a></span>
+      <span>Demo build, not yet live.</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
