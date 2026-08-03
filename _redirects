@@ -1,0 +1,8 @@
+# Affiliate redirects — swap targets for tracking URLs once programs approve:
+#   /go/krisp/          -> Impact tracking URL (Krisp program)
+#   /go/adobe-podcast/  -> Partnerize tracking URL (Adobe Affiliate Program)
+#   /go/auphonic/       -> FastSpring tracking URL (Auphonic affiliate)
+# "!" forces the redirect over the existing stub pages.
+/go/krisp/          https://krisp.ai/            301!
+/go/adobe-podcast/  https://podcast.adobe.com/   301!
+/go/auphonic/       https://auphonic.com/        301!
