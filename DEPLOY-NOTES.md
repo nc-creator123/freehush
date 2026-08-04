@@ -1,7 +1,8 @@
 # NC-02 FreeHush — deploy checklist
 
-1. **Domain** ✅ freehush.com (set 2026-08-03). — replace `freehush.example` in sitemap.xml, robots.txt and the
-   `crew@freehush.example` address (contact, privacy, terms).
+1. **Domain** ✅ freehush.com (set 2026-08-03). Canonicals/sitemap/robots swapped;
+   contact address is `crew@freehush.com` — CREATE THIS MAILBOX so reader mail doesn't bounce.
+2. **Demo footer line removed 2026-08-04** ("Demo build, not yet live.") — site is live.
 2. **Affiliate redirects → 301s** (config inside each stub):
    - /go/krisp/ → Impact tracking URL (Krisp program)
    - /go/adobe-podcast/ → Partnerize tracking URL (Adobe Affiliate Program; note: Podcast
