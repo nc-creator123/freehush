@@ -135,7 +135,12 @@
       <li><strong>Variable noise keeps beating you</strong> — the AI tools' models handle changing noise fundamentally better than a static profile can.</li>
     </ul>
 
-    <h2>Quick questions</h2>
+    
+<h2>Settings that don't ruin voices</h2>
+<p>The Noise Reduction dialog has three numbers, and the defaults tempt you to overdo all of them. Starting points that survive real use: noise reduction around 10–12 dB, sensitivity near 6, frequency smoothing at 3. Preview, then adjust <em>one</em> value at a time. If noise still shows through, resist dragging the dB slider to 24 — voices go watery and metallic past ~15 dB. The cleaner trick: run two gentle passes instead of one brutal one (apply at 10 dB, then apply again). Same total reduction, far fewer artifacts.</p>
+<h2>When Audacity is the wrong tool</h2>
+<p>Profile-based reduction has one requirement: consistent noise. Fans, hiss, hum — it eats them. What it can't handle is noise that changes: traffic, a café, voices behind you, because the profile it learned stops matching seconds later. For those recordings, upload to <a href="../adobe-podcast-enhance/index.html">Enhance's free tier</a> instead — rebuilds don't care whether the noise held still. And for anything <em>live</em> — meetings, streams — an offline editor is a category error: that's <a href="../krisp-free/index.html">Krisp free</a> for calls or <a href="../obs-noise-suppression/index.html">OBS's built-in filter</a> for streams. Audacity's lane is the recording that already exists, and inside that lane it's unbeatable at the price.</p>
+<h2>Quick questions</h2>
     <div class="faq2">
       <details>
         <summary>Is Audacity really free, or free-with-a-catch?</summary>

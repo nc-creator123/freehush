@@ -132,7 +132,12 @@
       <li><strong>You left OBS</strong> — the filter doesn't exist outside it; it's a feature, not a product.</li>
     </ul>
 
-    <h2>Quick questions</h2>
+    
+<h2>RNNoise vs Speex vs NVIDIA: picking the method</h2>
+<p>The filter's dropdown hides three different engines. <strong>RNNoise</strong> is the default and the right answer for most people: AI-based, zero configuration, paid for in a little CPU. <strong>Speex</strong> is the lightweight classic — it adds a suppression slider (default −30 dB) and costs almost nothing, but push the slider hard and it starts eating consonants; move it in small steps. <strong>NVIDIA Noise Removal</strong> appears if you have an RTX card with the Broadcast SDK installed — it's the <a href="../nvidia-broadcast/index.html">Broadcast engine</a> living inside OBS, GPU-billed, and the pick when only OBS needs cleanup and you'd rather not run the separate app.</p>
+<h2>Filter order: the part everyone gets wrong</h2>
+<p>OBS applies filters top-to-bottom, and the order changes the result. Noise Suppression goes <em>first</em> — let it lower the floor. A Noise Gate goes after it, with an easier job now that the floor is quiet. Compressors and limiters come last; compress before suppressing and you've amplified the exact hiss you're trying to delete. Drag to reorder in the Filters list. And remember the scope: this chain cleans your <em>stream and recordings</em> — your meeting apps never hear OBS filters. For calls, that's <a href="../krisp-free/index.html">Krisp free</a> or your app's built-in toggle, compared in the <a href="../../best-free/desktop-noise-cancellation/index.html">desktop roundup</a>.</p>
+<h2>Quick questions</h2>
     <div class="faq2">
       <details>
         <summary>Can I use OBS's noise suppression in Zoom or Teams?</summary>
