@@ -3,6 +3,10 @@
 1. **Domain** ✅ freehush.com (set 2026-08-03). Canonicals/sitemap/robots swapped;
    contact address is `crew@freehush.com` — CREATE THIS MAILBOX so reader mail doesn't bounce.
 2. **Demo footer line removed 2026-08-04** ("Demo build, not yet live.") — site is live.
+3. **Krisp affiliate tracking LIVE 2026-08-04** — Impact link installed in _redirects
+   (301!) and as the /go/krisp/ stub fallback. Never paste the raw pxf.io URL into
+   page HTML; everything routes via /go/krisp/. Adobe/Auphonic routes still await
+   program approval.
 2. **Affiliate redirects → 301s** (config inside each stub):
    - /go/krisp/ → Impact tracking URL (Krisp program)
    - /go/adobe-podcast/ → Partnerize tracking URL (Adobe Affiliate Program; note: Podcast
