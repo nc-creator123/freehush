@@ -9,7 +9,10 @@
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
-<link rel="stylesheet" href="../../styles.css">
+<meta name="theme-color" content="#ffffff">
+<link rel="preload" href="/fonts/gabarito-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/bevietnampro-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../styles.css?v=2">
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -61,59 +64,39 @@
 <body>
 <header class="hd">
   <div class="shell">
-    <a class="logo-fh" href="../../"><img src="../../favicon.svg" alt=""><b>Free<em>Hush</em></b></a>
-    <input type="checkbox" id="fh-nav" class="nav-toggle-box"><label for="fh-nav" class="nav-burger" aria-label="Open menu">☰</label>
-    <nav>
-      <div class="ndrop">
-        <a class="ndrop-top" href="../../best-free/desktop-noise-cancellation/">Desktop picks <span class="car">▾</span></a>
-        <div class="nmenu">
-          <a class="all" href="../../best-free/desktop-noise-cancellation/">★ The full desktop ranking</a>
-          <a href="../../free-tools/krisp-free/">Krisp Free</a>
-          <a href="../../free-tools/nvidia-broadcast/">NVIDIA Broadcast</a>
-          <a href="../../free-tools/obs-noise-suppression/">OBS noise filter</a>
-          <a href="../../free-tools/audacity-noise-reduction/">Audacity</a>
-        </div>
-      </div>
-      <div class="ndrop">
-        <a class="ndrop-top" href="../../best-free/online-noise-removers/">Online tools <span class="car">▾</span></a>
-        <div class="nmenu">
-          <a class="all" href="../../best-free/online-noise-removers/">★ The full online ranking</a>
-          <a href="../../free-tools/adobe-podcast-enhance/">Adobe Podcast Enhance</a>
-          <a href="../../free-tools/auphonic/">Auphonic</a>
-        </div>
-      </div>
-      <a href="../../blog/">Blog</a>
-      <a href="../../about/">About</a>
-      <a class="money" href="../../free-vs-paid/">Free vs Paid</a>
-    </nav>
+    <a class="logo-fh" href="../../"><svg viewBox="0 0 26 26" aria-hidden="true" fill="none"><path d="M3.2 9.6 9.6 3.2h10.2c1.6 0 2.9 1.3 2.9 2.9v10.3l-6.4 6.4a2.9 2.9 0 0 1-4.1 0L3.2 13.7a2.9 2.9 0 0 1 0-4.1Z" fill="#0c7a3d" stroke="#13261b" stroke-width="2"/><circle cx="9.5" cy="9.5" r="2.4" fill="#ffffff" stroke="#13261b" stroke-width="2"/></svg><b>Free<em>Hush</em></b></a>
+    <input type="checkbox" id="fh-nav" class="nav-toggle-box"><label for="fh-nav" class="nav-burger" tabindex="0"><svg viewBox="0 0 16 12" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M1.2 2h13.6M1.2 6h13.6M1.2 10h13.6"/></svg><span>Menu</span></label>
+    <nav><div class="ndrop"><a class="ndrop-top" href="../../best-free/desktop-noise-cancellation/">Desktop picks <svg class="car" viewBox="0 0 10 7" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1.6L5 5.4 9 1.6"/></svg></a><div class="nmenu"><a class="all" href="../../best-free/desktop-noise-cancellation/"><svg viewBox="0 0 26 26" aria-hidden="true" fill="none"><path d="M3.2 9.6 9.6 3.2h10.2c1.6 0 2.9 1.3 2.9 2.9v10.3l-6.4 6.4a2.9 2.9 0 0 1-4.1 0L3.2 13.7a2.9 2.9 0 0 1 0-4.1Z" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="9.5" cy="9.5" r="2.2" fill="none" stroke="currentColor" stroke-width="2.4"/></svg>The full desktop ranking</a><a href="../../free-tools/krisp-free/">Krisp Free</a><a href="../../free-tools/nvidia-broadcast/">NVIDIA Broadcast</a><a href="../../free-tools/obs-noise-suppression/">OBS noise filter</a><a href="../../free-tools/audacity-noise-reduction/">Audacity</a></div></div><div class="ndrop"><a class="ndrop-top" href="../../best-free/online-noise-removers/">Online tools <svg class="car" viewBox="0 0 10 7" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1.6L5 5.4 9 1.6"/></svg></a><div class="nmenu"><a class="all" href="../../best-free/online-noise-removers/"><svg viewBox="0 0 26 26" aria-hidden="true" fill="none"><path d="M3.2 9.6 9.6 3.2h10.2c1.6 0 2.9 1.3 2.9 2.9v10.3l-6.4 6.4a2.9 2.9 0 0 1-4.1 0L3.2 13.7a2.9 2.9 0 0 1 0-4.1Z" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="9.5" cy="9.5" r="2.2" fill="none" stroke="currentColor" stroke-width="2.4"/></svg>The full online ranking</a><a href="../../free-tools/adobe-podcast-enhance/">Adobe Podcast Enhance</a><a href="../../free-tools/auphonic/">Auphonic</a></div></div><a href="../../blog/">Blog</a><a href="../../about/">About</a><a class="money" href="../../free-vs-paid/">Free vs Paid</a></nav>
   </div>
 </header>
+<main>
 
 <div class="slim">
   <div class="bcrumb"><a href="../../">Home</a> / Free tools / Adobe Podcast Enhance</div>
   <article class="rv">
-    <div class="rvlogo"><span class="tlogo" style="background:#9b5cf6"><svg viewBox="0 0 32 32"><rect x="5.2" y="11.5" width="3" height="9" rx="1.5" fill="#fff" stroke="#22261f" stroke-width="1.1"/><rect x="10.4" y="8.0" width="3" height="16" rx="1.5" fill="#fff" stroke="#22261f" stroke-width="1.1"/><rect x="15.6" y="5.0" width="3" height="22" rx="1.5" fill="#fff" stroke="#22261f" stroke-width="1.1"/><rect x="20.8" y="8.0" width="3" height="16" rx="1.5" fill="#fff" stroke="#22261f" stroke-width="1.1"/><rect x="26" y="11.5" width="3" height="9" rx="1.5" fill="#fff" stroke="#22261f" stroke-width="1.1"/></svg></span></div>
+    <div class="rvlogo"><span class="tlogo"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="5.2" y="11.5" width="3" height="9" rx="1.5" fill="#fff" stroke="#13261b" stroke-width="1.1"/><rect x="10.4" y="8.0" width="3" height="16" rx="1.5" fill="#fff" stroke="#13261b" stroke-width="1.1"/><rect x="15.6" y="5.0" width="3" height="22" rx="1.5" fill="#fff" stroke="#13261b" stroke-width="1.1"/><rect x="20.8" y="8.0" width="3" height="16" rx="1.5" fill="#fff" stroke="#13261b" stroke-width="1.1"/><rect x="26" y="11.5" width="3" height="9" rx="1.5" fill="#fff" stroke="#13261b" stroke-width="1.1"/></svg></span></div>
     <h1>Adobe Podcast Enhance: The Free Hour a Day, Honestly Reviewed</h1>
     <p class="byline">By <b>the FreeHush crew</b> · Published July 28, 2026 · Last updated July 28, 2026</p>
 <div class="gorow"><a class="gobtn" href="../../go/adobe-podcast/" rel="sponsored nofollow">Clean a file free with Enhance</a><a class="gobtn alt" href="../audacity-noise-reduction/">Prefer offline? Audacity</a><span class="gonote">Green buttons may earn us a commission — your price never changes. Full disclosure in the footer.</span></div>
     <div class="note-aff">Heads-up: this page contains affiliate links — details in our <a href="../../terms/">disclosure</a>.</div>
     
-    <div class="vbox">
+    <div class="vbox tg tg-pale">
       <div class="limitbar"><span class="pill free">1 hr enhanced/day</span><span class="pill free">No watermark</span><span class="pill warn">30-min / 500 MB files</span><span class="pill warn">Uploads only — not live</span></div>
       <p>Adobe Podcast Enhance is the 'clean it after the fact' option: upload a noisy recording in your browser, download speech that sounds close to studio-recorded. The free tier is real — <strong>one hour of enhancement per day, files up to 30 minutes and 500&nbsp;MB, no watermark</strong> — with a free Adobe account. Two truths to hold at once: on rough recordings the transformation is remarkable, and the processing has a strong flavour — it rebuilds voices, and sometimes they come back sounding a little synthetic. It fixes recordings, not live calls.</p>
     </div>
-    <span class="checkedon">Free-tier limits (1 hr/day, 30-min and 500 MB per file) verified against Adobe's published plan details — July 28, 2026.</span>
+    <span class="checkedon"><svg viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="#0a6a35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.8" stroke="#0a6a35"/><path d="M5 8.4l2.1 2.1L11.2 6"/></svg><span>Free-tier limits (1 hr/day, 30-min and 500 MB per file) verified against Adobe's published plan details — July 28, 2026.</span></span>
 
+<figure><div class="chart"><div class="chart-t">What the daily free hour replaces</div><div class="chart-s">Premium&rsquo;s published rate, from the table below.</div><div class="board"><div class="brow"><span class="mname">Podcast Premium</span><span><span class="bbar"><span class="bfill" style="width:100%"></span></span><span class="bprice"><span class="bstruck" data-fig="$9.99" data-usd="9.99">$9.99</span><span class="bwhat">a month, for 4 hrs/day &mdash; your bill:</span><span class="byours">$0</span></span></span></div><p class="mnote">The free tier&rsquo;s hour a day is the same tool at a quarter of the daily allowance.</p></div></figure>
     <h2>Free vs Premium</h2>
-    <table class="fp">
+    <div class="tbl"><table class="fp">
       <tr><th></th><th>Free</th><th>Premium ($9.99/mo)</th></tr>
-      <tr><td>Enhancement allowance</td><td class="yes">1 hr/day</td><td class="yes">4 hrs/day</td></tr>
-      <tr><td>Max file length / size</td><td>30 min / 500 MB</td><td>2 hrs / 1 GB</td></tr>
-      <tr><td>Video files</td><td class="no">No — audio only</td><td class="yes">Yes</td></tr>
-      <tr><td>Fine control (speech/noise/ambience balance)</td><td class="no">Limited</td><td class="yes">Yes</td></tr>
-      <tr><td>Watermark</td><td class="yes">None</td><td class="yes">None</td></tr>
-      <tr><td>Account required</td><td colspan="2">Free Adobe ID</td></tr>
-    </table>
+      <tr><td data-h="">Enhancement allowance</td><td class="yes" data-h="Free">1 hr/day</td><td class="yes" data-h="Premium ($9.99/mo)">4 hrs/day</td></tr>
+      <tr><td data-h="">Max file length / size</td><td data-h="Free">30 min / 500 MB</td><td data-h="Premium ($9.99/mo)">2 hrs / 1 GB</td></tr>
+      <tr><td data-h="">Video files</td><td class="no" data-h="Free">No — audio only</td><td class="yes" data-h="Premium ($9.99/mo)">Yes</td></tr>
+      <tr><td data-h="">Fine control (speech/noise/ambience balance)</td><td class="no" data-h="Free">Limited</td><td class="yes" data-h="Premium ($9.99/mo)">Yes</td></tr>
+      <tr><td data-h="">Watermark</td><td class="yes" data-h="Free">None</td><td class="yes" data-h="Premium ($9.99/mo)">None</td></tr>
+      <tr><td data-h="">Account required</td><td colspan="2" data-h="">Free Adobe ID</td></tr>
+    </table></div>
 
     <h2>How it holds up</h2>
     <p>From Adobe's documentation and the tool's design — with the caveats this particular tool genuinely needs:</p>
@@ -180,38 +163,19 @@
   </article>
 </div>
 
+</main>
 <footer class="ft">
   <div class="shell">
     <div>
-      <a class="logo-fh" href="../../"><img src="../../favicon.svg" alt="" style="width:24px;height:24px"><b>Free<em>Hush</em></b></a>
-      <p class="blurb" style="margin-top:10px">Noise-cancellation tools with genuinely usable free tiers — limits stated up front, no trials dressed up as free.</p>
+      <a class="logo-fh" href="../../"><svg viewBox="0 0 26 26" aria-hidden="true" fill="none"><path d="M3.2 9.6 9.6 3.2h10.2c1.6 0 2.9 1.3 2.9 2.9v10.3l-6.4 6.4a2.9 2.9 0 0 1-4.1 0L3.2 13.7a2.9 2.9 0 0 1 0-4.1Z" fill="#0c7a3d" stroke="#13261b" stroke-width="2"/><circle cx="9.5" cy="9.5" r="2.4" fill="#ffffff" stroke="#13261b" stroke-width="2"/></svg><b>Free<em>Hush</em></b></a>
+      <p class="blurb">Six tools, six stated caps. The limit goes before the link here, with the day we last read it on the vendor&rsquo;s own page.</p>
     </div>
-    <div>
-      <h4>Free tool reviews</h4>
-      <ul>
-        <li><a href="../../free-tools/krisp-free/">Krisp Free</a></li>
-        <li><a href="../../free-tools/nvidia-broadcast/">NVIDIA Broadcast</a></li>
-        <li><a href="../../free-tools/adobe-podcast-enhance/">Adobe Podcast Enhance</a></li>
-        <li><a href="../../free-tools/audacity-noise-reduction/">Audacity</a></li>
-        <li><a href="../../free-tools/obs-noise-suppression/">OBS filter</a></li>
-        <li><a href="../../free-tools/auphonic/">Auphonic</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4>Site</h4>
-      <ul>
-        <li><a href="../../best-free/desktop-noise-cancellation/">Best free desktop tools</a></li>
-        <li><a href="../../best-free/online-noise-removers/">Best online removers</a></li>
-        <li><a href="../../free-vs-paid/">Free vs paid</a></li>
-        <li><a href="../../about/">About &amp; how we check</a></li>
-        <li><a href="../../contact/">Contact</a></li>
-      </ul>
-    </div>
-    <div class="tail">
-      <span>© 2026 FreeHush · <a href="../../privacy/">Privacy</a> · <a href="../../terms/">Terms &amp; affiliate disclosure</a></span>
-    </div>
+    <div><h2>The six free tiers</h2><ul><li><a href="../../free-tools/krisp-free/">Krisp Free</a></li><li><a href="../../free-tools/nvidia-broadcast/">NVIDIA Broadcast</a></li><li><a href="../../free-tools/adobe-podcast-enhance/">Adobe Podcast Enhance</a></li><li><a href="../../free-tools/audacity-noise-reduction/">Audacity</a></li><li><a href="../../free-tools/obs-noise-suppression/">OBS filter</a></li><li><a href="../../free-tools/auphonic/">Auphonic</a></li></ul></div>
+    <div><h2>Around the site</h2><ul><li><a href="../../best-free/desktop-noise-cancellation/">Best free desktop tools</a></li><li><a href="../../best-free/online-noise-removers/">Best online removers</a></li><li><a href="../../free-vs-paid/">Free vs paid</a></li><li><a href="../../about/">About &amp; how we check</a></li><li><a href="../../blog/">Blog</a></li><li><a href="../../contact/">Contact</a></li></ul></div>
+    <div class="tail"><span>&copy; 2026 FreeHush &middot; <a href="../../privacy/">Privacy</a> &middot; <a href="../../terms/">Terms &amp; affiliate disclosure</a></span><span>Every cap re-read at the source, never copied off another list.</span></div>
   </div>
 </footer>
 
+<script>(function(){var b=document.getElementById('fh-nav');if(!b)return;var l=document.querySelector('label[for="fh-nav"]');l.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();b.checked=!b.checked;}});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&b.checked){b.checked=false;l.focus();}});document.addEventListener('click',function(e){if(!b.checked)return;if(e.target===b||e.target===l||(e.target.closest&&e.target.closest('.hd')))return;b.checked=false;});})();</script>
 </body>
 </html>

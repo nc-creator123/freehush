@@ -1,0 +1,7 @@
+# Internal files never published by Netlify (publish dir = repo root).
+# Added 2026-10-05: DEPLOY-NOTES.md had been publicly readable at /DEPLOY-NOTES.md since 2026-08-03.
+DEPLOY-NOTES.md
+DESIGN.md
+tools/
+*.md
+.DS_Store

@@ -9,7 +9,10 @@
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
-<link rel="stylesheet" href="../../styles.css">
+<meta name="theme-color" content="#ffffff">
+<link rel="preload" href="/fonts/gabarito-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/bevietnampro-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../styles.css?v=2">
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -61,57 +64,37 @@
 <body>
 <header class="hd">
   <div class="shell">
-    <a class="logo-fh" href="../../"><img src="../../favicon.svg" alt=""><b>Free<em>Hush</em></b></a>
-    <input type="checkbox" id="fh-nav" class="nav-toggle-box"><label for="fh-nav" class="nav-burger" aria-label="Open menu">☰</label>
-    <nav>
-      <div class="ndrop">
-        <a class="ndrop-top" href="../../best-free/desktop-noise-cancellation/">Desktop picks <span class="car">▾</span></a>
-        <div class="nmenu">
-          <a class="all" href="../../best-free/desktop-noise-cancellation/">★ The full desktop ranking</a>
-          <a href="../../free-tools/krisp-free/">Krisp Free</a>
-          <a href="../../free-tools/nvidia-broadcast/">NVIDIA Broadcast</a>
-          <a href="../../free-tools/obs-noise-suppression/">OBS noise filter</a>
-          <a href="../../free-tools/audacity-noise-reduction/">Audacity</a>
-        </div>
-      </div>
-      <div class="ndrop">
-        <a class="ndrop-top" href="../../best-free/online-noise-removers/">Online tools <span class="car">▾</span></a>
-        <div class="nmenu">
-          <a class="all" href="../../best-free/online-noise-removers/">★ The full online ranking</a>
-          <a href="../../free-tools/adobe-podcast-enhance/">Adobe Podcast Enhance</a>
-          <a href="../../free-tools/auphonic/">Auphonic</a>
-        </div>
-      </div>
-      <a href="../../blog/">Blog</a>
-      <a href="../../about/">About</a>
-      <a class="money" href="../../free-vs-paid/">Free vs Paid</a>
-    </nav>
+    <a class="logo-fh" href="../../"><svg viewBox="0 0 26 26" aria-hidden="true" fill="none"><path d="M3.2 9.6 9.6 3.2h10.2c1.6 0 2.9 1.3 2.9 2.9v10.3l-6.4 6.4a2.9 2.9 0 0 1-4.1 0L3.2 13.7a2.9 2.9 0 0 1 0-4.1Z" fill="#0c7a3d" stroke="#13261b" stroke-width="2"/><circle cx="9.5" cy="9.5" r="2.4" fill="#ffffff" stroke="#13261b" stroke-width="2"/></svg><b>Free<em>Hush</em></b></a>
+    <input type="checkbox" id="fh-nav" class="nav-toggle-box"><label for="fh-nav" class="nav-burger" tabindex="0"><svg viewBox="0 0 16 12" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M1.2 2h13.6M1.2 6h13.6M1.2 10h13.6"/></svg><span>Menu</span></label>
+    <nav><div class="ndrop"><a class="ndrop-top" href="../../best-free/desktop-noise-cancellation/">Desktop picks <svg class="car" viewBox="0 0 10 7" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1.6L5 5.4 9 1.6"/></svg></a><div class="nmenu"><a class="all" href="../../best-free/desktop-noise-cancellation/"><svg viewBox="0 0 26 26" aria-hidden="true" fill="none"><path d="M3.2 9.6 9.6 3.2h10.2c1.6 0 2.9 1.3 2.9 2.9v10.3l-6.4 6.4a2.9 2.9 0 0 1-4.1 0L3.2 13.7a2.9 2.9 0 0 1 0-4.1Z" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="9.5" cy="9.5" r="2.2" fill="none" stroke="currentColor" stroke-width="2.4"/></svg>The full desktop ranking</a><a href="../../free-tools/krisp-free/">Krisp Free</a><a href="../../free-tools/nvidia-broadcast/">NVIDIA Broadcast</a><a href="../../free-tools/obs-noise-suppression/">OBS noise filter</a><a href="../../free-tools/audacity-noise-reduction/">Audacity</a></div></div><div class="ndrop"><a class="ndrop-top" href="../../best-free/online-noise-removers/">Online tools <svg class="car" viewBox="0 0 10 7" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1.6L5 5.4 9 1.6"/></svg></a><div class="nmenu"><a class="all" href="../../best-free/online-noise-removers/"><svg viewBox="0 0 26 26" aria-hidden="true" fill="none"><path d="M3.2 9.6 9.6 3.2h10.2c1.6 0 2.9 1.3 2.9 2.9v10.3l-6.4 6.4a2.9 2.9 0 0 1-4.1 0L3.2 13.7a2.9 2.9 0 0 1 0-4.1Z" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="9.5" cy="9.5" r="2.2" fill="none" stroke="currentColor" stroke-width="2.4"/></svg>The full online ranking</a><a href="../../free-tools/adobe-podcast-enhance/">Adobe Podcast Enhance</a><a href="../../free-tools/auphonic/">Auphonic</a></div></div><a href="../../blog/">Blog</a><a href="../../about/">About</a><a class="money" href="../../free-vs-paid/">Free vs Paid</a></nav>
   </div>
 </header>
+<main>
 
 <div class="slim">
   <div class="bcrumb"><a href="../../">Home</a> / Free tools / OBS filter</div>
   <article class="rv">
-    <div class="rvlogo"><span class="tlogo" style="background:#20242e"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="12.6" fill="none" stroke="#fff" stroke-width="2.2"/><path d="M16 6.8a9.2 9.2 0 0 1 8 4.7l-4.9 1.3A5 5 0 0 0 16 10.8z" fill="#fff" stroke="#22261f" stroke-width="1" transform="rotate(0 16 16)"/><path d="M16 6.8a9.2 9.2 0 0 1 8 4.7l-4.9 1.3A5 5 0 0 0 16 10.8z" fill="#fff" stroke="#22261f" stroke-width="1" transform="rotate(120 16 16)"/><path d="M16 6.8a9.2 9.2 0 0 1 8 4.7l-4.9 1.3A5 5 0 0 0 16 10.8z" fill="#fff" stroke="#22261f" stroke-width="1" transform="rotate(240 16 16)"/></svg></span></div>
+    <div class="rvlogo"><span class="tlogo"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="12.6" fill="none" stroke="#fff" stroke-width="2.2"/><path d="M16 6.8a9.2 9.2 0 0 1 8 4.7l-4.9 1.3A5 5 0 0 0 16 10.8z" fill="#fff" stroke="#13261b" stroke-width="1" transform="rotate(0 16 16)"/><path d="M16 6.8a9.2 9.2 0 0 1 8 4.7l-4.9 1.3A5 5 0 0 0 16 10.8z" fill="#fff" stroke="#13261b" stroke-width="1" transform="rotate(120 16 16)"/><path d="M16 6.8a9.2 9.2 0 0 1 8 4.7l-4.9 1.3A5 5 0 0 0 16 10.8z" fill="#fff" stroke="#13261b" stroke-width="1" transform="rotate(240 16 16)"/></svg></span></div>
     <h1>OBS's Noise Suppression Filter: The Free Tool You Already Installed</h1>
     <p class="byline">By <b>the FreeHush crew</b> · Published July 28, 2026 · Last updated July 28, 2026</p>
 <div class="gorow"><a class="gobtn" href="../../go/krisp/" rel="sponsored nofollow">Skip the filter fiddling — try Krisp free</a><a class="gobtn alt" href="https://obsproject.com/">Get OBS free</a><span class="gonote">Green buttons may earn us a commission — your price never changes. Full disclosure in the footer.</span></div>
     
-    <div class="vbox">
+    <div class="vbox tg tg-pale">
       <div class="limitbar"><span class="pill free">100% free</span><span class="pill free">Win / Mac / Linux</span><span class="pill warn">Streams & recordings, not calls</span></div>
       <p>If OBS Studio is on your machine for streaming or screen recording, you already own a competent noise suppressor and it's <strong>two clicks from being enabled</strong>: a filter on your mic source, with the <strong>RNNoise</strong> method doing genuinely respectable AI-ish suppression at zero cost, forever. Its scope is the honest limit — the filter cleans audio going <em>into OBS</em> (your stream, your recording), not your Zoom calls, unless you deliberately route OBS's audio into meetings with extra plumbing.</p>
     </div>
-    <span class="checkedon">Filter options (RNNoise / Speex) described from OBS Studio's current documentation — July 28, 2026.</span>
+    <span class="checkedon"><svg viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="#0a6a35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.8" stroke="#0a6a35"/><path d="M5 8.4l2.1 2.1L11.2 6"/></svg><span>Filter options (RNNoise / Speex) described from OBS Studio's current documentation — July 28, 2026.</span></span>
 
+<figure><div class="chart"><div class="chart-t">The whole price list</div><div class="chart-s">Straight off the table below.</div><div class="board"><div class="brow"><span class="mname">OBS noise suppression</span><span><span class="bprice"><span class="byours" data-fig="$0">$0</span><span class="bwhat">open source, included in OBS Studio</span></span></span></div><p class="mnote">Nothing to strike through: the filter has no paid tier, only a scope limit.</p></div></figure>
     <h2>What's free — everything, within OBS</h2>
-    <table class="fp">
+    <div class="tbl"><table class="fp">
       <tr><th></th><th>OBS noise suppression</th></tr>
-      <tr><td>Price</td><td class="yes">$0 — open source, included in OBS Studio</td></tr>
-      <tr><td>Methods</td><td class="yes">RNNoise (better quality) · Speex (lighter CPU, adjustable)</td></tr>
-      <tr><td>Applies to</td><td>Any audio source inside OBS — streams and recordings</td></tr>
-      <tr><td>Live meeting apps</td><td class="no">Not directly — needs virtual-audio routing to reach Zoom &amp; co.</td></tr>
-      <tr><td>Limits, accounts, watermarks</td><td class="yes">None</td></tr>
-    </table>
+      <tr><td data-h="">Price</td><td class="yes" data-h="OBS noise suppression">$0 — open source, included in OBS Studio</td></tr>
+      <tr><td data-h="">Methods</td><td class="yes" data-h="OBS noise suppression">RNNoise (better quality) · Speex (lighter CPU, adjustable)</td></tr>
+      <tr><td data-h="">Applies to</td><td data-h="OBS noise suppression">Any audio source inside OBS — streams and recordings</td></tr>
+      <tr><td data-h="">Live meeting apps</td><td class="no" data-h="OBS noise suppression">Not directly — needs virtual-audio routing to reach Zoom &amp; co.</td></tr>
+      <tr><td data-h="">Limits, accounts, watermarks</td><td class="yes" data-h="OBS noise suppression">None</td></tr>
+    </table></div>
 
     <h2>How it holds up</h2>
     <p>From OBS documentation and the two algorithms' known shapes:</p>
@@ -168,38 +151,19 @@
   </article>
 </div>
 
+</main>
 <footer class="ft">
   <div class="shell">
     <div>
-      <a class="logo-fh" href="../../"><img src="../../favicon.svg" alt="" style="width:24px;height:24px"><b>Free<em>Hush</em></b></a>
-      <p class="blurb" style="margin-top:10px">Noise-cancellation tools with genuinely usable free tiers — limits stated up front, no trials dressed up as free.</p>
+      <a class="logo-fh" href="../../"><svg viewBox="0 0 26 26" aria-hidden="true" fill="none"><path d="M3.2 9.6 9.6 3.2h10.2c1.6 0 2.9 1.3 2.9 2.9v10.3l-6.4 6.4a2.9 2.9 0 0 1-4.1 0L3.2 13.7a2.9 2.9 0 0 1 0-4.1Z" fill="#0c7a3d" stroke="#13261b" stroke-width="2"/><circle cx="9.5" cy="9.5" r="2.4" fill="#ffffff" stroke="#13261b" stroke-width="2"/></svg><b>Free<em>Hush</em></b></a>
+      <p class="blurb">Six tools, six stated caps. The limit goes before the link here, with the day we last read it on the vendor&rsquo;s own page.</p>
     </div>
-    <div>
-      <h4>Free tool reviews</h4>
-      <ul>
-        <li><a href="../../free-tools/krisp-free/">Krisp Free</a></li>
-        <li><a href="../../free-tools/nvidia-broadcast/">NVIDIA Broadcast</a></li>
-        <li><a href="../../free-tools/adobe-podcast-enhance/">Adobe Podcast Enhance</a></li>
-        <li><a href="../../free-tools/audacity-noise-reduction/">Audacity</a></li>
-        <li><a href="../../free-tools/obs-noise-suppression/">OBS filter</a></li>
-        <li><a href="../../free-tools/auphonic/">Auphonic</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4>Site</h4>
-      <ul>
-        <li><a href="../../best-free/desktop-noise-cancellation/">Best free desktop tools</a></li>
-        <li><a href="../../best-free/online-noise-removers/">Best online removers</a></li>
-        <li><a href="../../free-vs-paid/">Free vs paid</a></li>
-        <li><a href="../../about/">About &amp; how we check</a></li>
-        <li><a href="../../contact/">Contact</a></li>
-      </ul>
-    </div>
-    <div class="tail">
-      <span>© 2026 FreeHush · <a href="../../privacy/">Privacy</a> · <a href="../../terms/">Terms &amp; affiliate disclosure</a></span>
-    </div>
+    <div><h2>The six free tiers</h2><ul><li><a href="../../free-tools/krisp-free/">Krisp Free</a></li><li><a href="../../free-tools/nvidia-broadcast/">NVIDIA Broadcast</a></li><li><a href="../../free-tools/adobe-podcast-enhance/">Adobe Podcast Enhance</a></li><li><a href="../../free-tools/audacity-noise-reduction/">Audacity</a></li><li><a href="../../free-tools/obs-noise-suppression/">OBS filter</a></li><li><a href="../../free-tools/auphonic/">Auphonic</a></li></ul></div>
+    <div><h2>Around the site</h2><ul><li><a href="../../best-free/desktop-noise-cancellation/">Best free desktop tools</a></li><li><a href="../../best-free/online-noise-removers/">Best online removers</a></li><li><a href="../../free-vs-paid/">Free vs paid</a></li><li><a href="../../about/">About &amp; how we check</a></li><li><a href="../../blog/">Blog</a></li><li><a href="../../contact/">Contact</a></li></ul></div>
+    <div class="tail"><span>&copy; 2026 FreeHush &middot; <a href="../../privacy/">Privacy</a> &middot; <a href="../../terms/">Terms &amp; affiliate disclosure</a></span><span>Every cap re-read at the source, never copied off another list.</span></div>
   </div>
 </footer>
 
+<script>(function(){var b=document.getElementById('fh-nav');if(!b)return;var l=document.querySelector('label[for="fh-nav"]');l.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();b.checked=!b.checked;}});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&b.checked){b.checked=false;l.focus();}});document.addEventListener('click',function(e){if(!b.checked)return;if(e.target===b||e.target===l||(e.target.closest&&e.target.closest('.hd')))return;b.checked=false;});})();</script>
 </body>
 </html>

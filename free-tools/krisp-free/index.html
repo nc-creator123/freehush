@@ -9,7 +9,10 @@
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
-<link rel="stylesheet" href="../../styles.css">
+<meta name="theme-color" content="#ffffff">
+<link rel="preload" href="/fonts/gabarito-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/bevietnampro-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../styles.css?v=2">
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -61,61 +64,41 @@
 <body>
 <header class="hd">
   <div class="shell">
-    <a class="logo-fh" href="../../"><img src="../../favicon.svg" alt=""><b>Free<em>Hush</em></b></a>
-    <input type="checkbox" id="fh-nav" class="nav-toggle-box"><label for="fh-nav" class="nav-burger" aria-label="Open menu">☰</label>
-    <nav>
-      <div class="ndrop">
-        <a class="ndrop-top" href="../../best-free/desktop-noise-cancellation/">Desktop picks <span class="car">▾</span></a>
-        <div class="nmenu">
-          <a class="all" href="../../best-free/desktop-noise-cancellation/">★ The full desktop ranking</a>
-          <a href="../../free-tools/krisp-free/">Krisp Free</a>
-          <a href="../../free-tools/nvidia-broadcast/">NVIDIA Broadcast</a>
-          <a href="../../free-tools/obs-noise-suppression/">OBS noise filter</a>
-          <a href="../../free-tools/audacity-noise-reduction/">Audacity</a>
-        </div>
-      </div>
-      <div class="ndrop">
-        <a class="ndrop-top" href="../../best-free/online-noise-removers/">Online tools <span class="car">▾</span></a>
-        <div class="nmenu">
-          <a class="all" href="../../best-free/online-noise-removers/">★ The full online ranking</a>
-          <a href="../../free-tools/adobe-podcast-enhance/">Adobe Podcast Enhance</a>
-          <a href="../../free-tools/auphonic/">Auphonic</a>
-        </div>
-      </div>
-      <a href="../../blog/">Blog</a>
-      <a href="../../about/">About</a>
-      <a class="money" href="../../free-vs-paid/">Free vs Paid</a>
-    </nav>
+    <a class="logo-fh" href="../../"><svg viewBox="0 0 26 26" aria-hidden="true" fill="none"><path d="M3.2 9.6 9.6 3.2h10.2c1.6 0 2.9 1.3 2.9 2.9v10.3l-6.4 6.4a2.9 2.9 0 0 1-4.1 0L3.2 13.7a2.9 2.9 0 0 1 0-4.1Z" fill="#0c7a3d" stroke="#13261b" stroke-width="2"/><circle cx="9.5" cy="9.5" r="2.4" fill="#ffffff" stroke="#13261b" stroke-width="2"/></svg><b>Free<em>Hush</em></b></a>
+    <input type="checkbox" id="fh-nav" class="nav-toggle-box"><label for="fh-nav" class="nav-burger" tabindex="0"><svg viewBox="0 0 16 12" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M1.2 2h13.6M1.2 6h13.6M1.2 10h13.6"/></svg><span>Menu</span></label>
+    <nav><div class="ndrop"><a class="ndrop-top" href="../../best-free/desktop-noise-cancellation/">Desktop picks <svg class="car" viewBox="0 0 10 7" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1.6L5 5.4 9 1.6"/></svg></a><div class="nmenu"><a class="all" href="../../best-free/desktop-noise-cancellation/"><svg viewBox="0 0 26 26" aria-hidden="true" fill="none"><path d="M3.2 9.6 9.6 3.2h10.2c1.6 0 2.9 1.3 2.9 2.9v10.3l-6.4 6.4a2.9 2.9 0 0 1-4.1 0L3.2 13.7a2.9 2.9 0 0 1 0-4.1Z" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="9.5" cy="9.5" r="2.2" fill="none" stroke="currentColor" stroke-width="2.4"/></svg>The full desktop ranking</a><a href="../../free-tools/krisp-free/">Krisp Free</a><a href="../../free-tools/nvidia-broadcast/">NVIDIA Broadcast</a><a href="../../free-tools/obs-noise-suppression/">OBS noise filter</a><a href="../../free-tools/audacity-noise-reduction/">Audacity</a></div></div><div class="ndrop"><a class="ndrop-top" href="../../best-free/online-noise-removers/">Online tools <svg class="car" viewBox="0 0 10 7" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1.6L5 5.4 9 1.6"/></svg></a><div class="nmenu"><a class="all" href="../../best-free/online-noise-removers/"><svg viewBox="0 0 26 26" aria-hidden="true" fill="none"><path d="M3.2 9.6 9.6 3.2h10.2c1.6 0 2.9 1.3 2.9 2.9v10.3l-6.4 6.4a2.9 2.9 0 0 1-4.1 0L3.2 13.7a2.9 2.9 0 0 1 0-4.1Z" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="9.5" cy="9.5" r="2.2" fill="none" stroke="currentColor" stroke-width="2.4"/></svg>The full online ranking</a><a href="../../free-tools/adobe-podcast-enhance/">Adobe Podcast Enhance</a><a href="../../free-tools/auphonic/">Auphonic</a></div></div><a href="../../blog/">Blog</a><a href="../../about/">About</a><a class="money" href="../../free-vs-paid/">Free vs Paid</a></nav>
   </div>
 </header>
+<main>
 
 <div class="slim">
   <div class="bcrumb"><a href="../../">Home</a> / Free tools / Krisp Free</div>
   <article class="rv">
-    <div class="rvlogo"><span class="tlogo" style="background:#7c5cff"><svg viewBox="0 0 32 32"><path d="M9 5h5v9l7-9h6l-8 10 8 12h-6l-6-9-1 1.2V27H9z" fill="#fff" stroke="#22261f" stroke-width="1.4" stroke-linejoin="round"/></svg></span></div>
+    <div class="rvlogo"><span class="tlogo"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M9 5h5v9l7-9h6l-8 10 8 12h-6l-6-9-1 1.2V27H9z" fill="#fff" stroke="#13261b" stroke-width="1.4" stroke-linejoin="round"/></svg></span></div>
     <h1>Krisp Free: What 60 Minutes a Day Actually Gets You</h1>
     <p class="byline">By <b>the FreeHush crew</b> · Published July 28, 2026 · Last updated July 28, 2026</p>
 <div class="gorow"><a class="gobtn" href="../../go/krisp/" rel="sponsored nofollow">Get Krisp free — no card needed</a><a class="gobtn alt" href="../../free-vs-paid/">When paying beats free</a><span class="gonote">Green buttons may earn us a commission — your price never changes. Full disclosure in the footer.</span></div>
     <div class="note-aff">Heads-up: this page contains affiliate links — details in our <a href="../../terms/">disclosure</a>.</div>
 
-    <div class="vbox">
+    <div class="vbox tg tg-pale">
       <div class="limitbar"><span class="pill free">30 free hours/mo</span><span class="pill free">Any meeting app</span><span class="pill free">Win + Mac</span><span class="pill warn">1 device at a time</span></div>
       <p>Krisp Free is the rare freemium plan that's still genuinely useful: <strong>30 free hours of noise-cancelled audio a month — a fresh hour every day</strong>, resetting at midnight GMT, working as a virtual microphone in Zoom, Teams, Meet, Discord — anything that can pick an input device. Sixty minutes covers one long meeting or two short ones; if your day holds more calls than that, you'll feel the wall fast, and that's exactly the wall the paid plan sells past. Bonus most people miss: <strong>sign up with a work email and Krisp bumps you to 1.5× the daily minutes</strong>.</p>
     </div>
-    <span class="checkedon">Free-tier limits verified against Krisp's own help center and pricing pages — July 28, 2026.</span>
+    <span class="checkedon"><svg viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="#0a6a35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.8" stroke="#0a6a35"/><path d="M5 8.4l2.1 2.1L11.2 6"/></svg><span>Free-tier limits verified against Krisp's own help center and pricing pages — July 28, 2026.</span></span>
 
+<figure><div class="chart"><div class="chart-t">The counter, priced</div><div class="chart-s">Krisp&rsquo;s two published rates for the same unlimited plan, from the table below.</div><div class="board"><div class="brow"><span class="mname">Core, annual rate</span><span><span class="bbar"><span class="bfill" style="width:50%"></span></span><span class="bprice"><span class="bstruck" data-fig="$8" data-usd="8">$8</span><span class="bwhat">a month &mdash; your bill:</span><span class="byours">Free</span></span></span></div><div class="brow"><span class="mname">Core, month to month</span><span><span class="bbar"><span class="bfill" style="width:100%"></span></span><span class="bprice"><span class="bstruck" data-fig="$16" data-usd="16">$16</span><span class="bwhat">a month &mdash; your bill:</span><span class="byours">Free</span></span></span></div><p class="mnote">Same product, two rates: the month-to-month figure is double the annual one. The free plan bills neither.</p></div></figure>
     <h2>Free vs paid, in one table</h2>
     <p>The free plan is a real plan, not a demo — but the boundaries matter:</p>
-    <table class="fp">
+    <div class="tbl"><table class="fp">
       <tr><th></th><th>Free</th><th>Core ($8/mo annual, $16 monthly)</th></tr>
-      <tr><td>Noise cancellation</td><td class="yes">30 free h/month (1 h/day; 1.5× with work email)</td><td class="yes">Unlimited</td></tr>
-      <tr><td>Works in any app (virtual mic)</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
-      <tr><td>Both directions (in + out)</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
-      <tr><td>Transcription</td><td class="yes">Unlimited</td><td class="yes">Unlimited</td></tr>
-      <tr><td>AI meeting notes</td><td>2/day</td><td class="yes">Unlimited</td></tr>
-      <tr><td>Devices signed in</td><td class="no">One at a time</td><td class="yes">More flexible</td></tr>
-      <tr><td>7-day full trial</td><td colspan="2">Available separately, no card required</td></tr>
-    </table>
+      <tr><td data-h="">Noise cancellation</td><td class="yes" data-h="Free">30 free h/month (1 h/day; 1.5× with work email)</td><td class="yes" data-h="Core ($8/mo annual, $16 monthly)">Unlimited</td></tr>
+      <tr><td data-h="">Works in any app (virtual mic)</td><td class="yes" data-h="Free">Yes</td><td class="yes" data-h="Core ($8/mo annual, $16 monthly)">Yes</td></tr>
+      <tr><td data-h="">Both directions (in + out)</td><td class="yes" data-h="Free">Yes</td><td class="yes" data-h="Core ($8/mo annual, $16 monthly)">Yes</td></tr>
+      <tr><td data-h="">Transcription</td><td class="yes" data-h="Free">Unlimited</td><td class="yes" data-h="Core ($8/mo annual, $16 monthly)">Unlimited</td></tr>
+      <tr><td data-h="">AI meeting notes</td><td data-h="Free">2/day</td><td class="yes" data-h="Core ($8/mo annual, $16 monthly)">Unlimited</td></tr>
+      <tr><td data-h="">Devices signed in</td><td class="no" data-h="Free">One at a time</td><td class="yes" data-h="Core ($8/mo annual, $16 monthly)">More flexible</td></tr>
+      <tr><td data-h="">7-day full trial</td><td colspan="2" data-h="">Available separately, no card required</td></tr>
+    </table></div>
 
     <h2>How the free tier holds up</h2>
     <p>We build these assessments from Krisp's documentation plus the shape of the limits — and we'll tell you exactly what to test on your own calls:</p>
@@ -185,38 +168,19 @@
   </article>
 </div>
 
+</main>
 <footer class="ft">
   <div class="shell">
     <div>
-      <a class="logo-fh" href="../../"><img src="../../favicon.svg" alt="" style="width:24px;height:24px"><b>Free<em>Hush</em></b></a>
-      <p class="blurb" style="margin-top:10px">Noise-cancellation tools with genuinely usable free tiers — limits stated up front, no trials dressed up as free.</p>
+      <a class="logo-fh" href="../../"><svg viewBox="0 0 26 26" aria-hidden="true" fill="none"><path d="M3.2 9.6 9.6 3.2h10.2c1.6 0 2.9 1.3 2.9 2.9v10.3l-6.4 6.4a2.9 2.9 0 0 1-4.1 0L3.2 13.7a2.9 2.9 0 0 1 0-4.1Z" fill="#0c7a3d" stroke="#13261b" stroke-width="2"/><circle cx="9.5" cy="9.5" r="2.4" fill="#ffffff" stroke="#13261b" stroke-width="2"/></svg><b>Free<em>Hush</em></b></a>
+      <p class="blurb">Six tools, six stated caps. The limit goes before the link here, with the day we last read it on the vendor&rsquo;s own page.</p>
     </div>
-    <div>
-      <h4>Free tool reviews</h4>
-      <ul>
-        <li><a href="../../free-tools/krisp-free/">Krisp Free</a></li>
-        <li><a href="../../free-tools/nvidia-broadcast/">NVIDIA Broadcast</a></li>
-        <li><a href="../../free-tools/adobe-podcast-enhance/">Adobe Podcast Enhance</a></li>
-        <li><a href="../../free-tools/audacity-noise-reduction/">Audacity</a></li>
-        <li><a href="../../free-tools/obs-noise-suppression/">OBS filter</a></li>
-        <li><a href="../../free-tools/auphonic/">Auphonic</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4>Site</h4>
-      <ul>
-        <li><a href="../../best-free/desktop-noise-cancellation/">Best free desktop tools</a></li>
-        <li><a href="../../best-free/online-noise-removers/">Best online removers</a></li>
-        <li><a href="../../free-vs-paid/">Free vs paid</a></li>
-        <li><a href="../../about/">About &amp; how we check</a></li>
-        <li><a href="../../contact/">Contact</a></li>
-      </ul>
-    </div>
-    <div class="tail">
-      <span>© 2026 FreeHush · <a href="../../privacy/">Privacy</a> · <a href="../../terms/">Terms &amp; affiliate disclosure</a></span>
-    </div>
+    <div><h2>The six free tiers</h2><ul><li><a href="../../free-tools/krisp-free/">Krisp Free</a></li><li><a href="../../free-tools/nvidia-broadcast/">NVIDIA Broadcast</a></li><li><a href="../../free-tools/adobe-podcast-enhance/">Adobe Podcast Enhance</a></li><li><a href="../../free-tools/audacity-noise-reduction/">Audacity</a></li><li><a href="../../free-tools/obs-noise-suppression/">OBS filter</a></li><li><a href="../../free-tools/auphonic/">Auphonic</a></li></ul></div>
+    <div><h2>Around the site</h2><ul><li><a href="../../best-free/desktop-noise-cancellation/">Best free desktop tools</a></li><li><a href="../../best-free/online-noise-removers/">Best online removers</a></li><li><a href="../../free-vs-paid/">Free vs paid</a></li><li><a href="../../about/">About &amp; how we check</a></li><li><a href="../../blog/">Blog</a></li><li><a href="../../contact/">Contact</a></li></ul></div>
+    <div class="tail"><span>&copy; 2026 FreeHush &middot; <a href="../../privacy/">Privacy</a> &middot; <a href="../../terms/">Terms &amp; affiliate disclosure</a></span><span>Every cap re-read at the source, never copied off another list.</span></div>
   </div>
 </footer>
 
+<script>(function(){var b=document.getElementById('fh-nav');if(!b)return;var l=document.querySelector('label[for="fh-nav"]');l.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();b.checked=!b.checked;}});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&b.checked){b.checked=false;l.focus();}});document.addEventListener('click',function(e){if(!b.checked)return;if(e.target===b||e.target===l||(e.target.closest&&e.target.closest('.hd')))return;b.checked=false;});})();</script>
 </body>
 </html>
