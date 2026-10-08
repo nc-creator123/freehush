@@ -6,3 +6,7 @@
 /go/krisp/          https://krisp.pxf.io/c/7546166/2859289/33230  301!
 /go/adobe-podcast/  https://podcast.adobe.com/   301!
 /go/auphonic/       https://auphonic.com/        301!
+
+# Duplicate URLs (2026-10-08): any /…/index.html 301s to its clean directory URL, like the VPS sites.
+/index.html  /  301!
+/*/index.html  /:splat/  301!
