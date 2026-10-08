@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OBS Noise Suppression Filter: Free & Built In | FreeHush</title>
-<meta name="description" content="OBS Studio ships a free noise suppression filter (RNNoise) most users never enable. Two-click setup for streams and recordings — and its honest limits.">
+<title>OBS Noise Suppression: RNNoise vs Speex, Setup &amp; Filter Order | FreeHush</title>
+<meta name="description" content="OBS noise suppression is built in and free: a filter on your mic source with RNNoise or Speex. How to add it, which method to pick, where it sits in the filter order, and its one honest limit.">
 <link rel="icon" href="/favicon.ico?v=2" sizes="32x32">
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png?v=2">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2">
@@ -24,41 +24,10 @@
   "url": "../../about/"
  },
  "datePublished": "2026-07-28",
- "dateModified": "2026-07-28"
+ "dateModified": "2026-10-06"
 }
 </script>
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "FAQPage",
- "mainEntity": [
-  {
-   "@type": "Question",
-   "name": "Can I use OBS's noise suppression in Zoom or Teams?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Not directly — filters apply to OBS's own output. It can be done by sending OBS audio through a virtual audio cable that the meeting app selects as its mic, but at that point a purpose-built virtual-mic tool is simpler."
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "RNNoise or Speex — which should I pick?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "RNNoise, unless your CPU visibly can't afford it. It handles speech-vs-noise separation better; Speex is the lightweight fallback with a manual suppression slider."
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "Does the filter affect my recording quality?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "It processes the mic track like any effect — good settings are transparent on voice. The safe check is a one-minute A/B recording; if RNNoise artefacts show on your voice, they'll show there."
-   }
-  }
- ]
-}
-</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does OBS have noise suppression?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. OBS Studio includes a Noise Suppression filter with RNNoise and Speex methods on Windows, macOS and Linux; no plugin is needed."}}, {"@type": "Question", "name": "How do I add noise suppression to OBS?", "acceptedAnswer": {"@type": "Answer", "text": "Audio Mixer → ⋮ on the mic source → Filters → + → Noise Suppression → RNNoise. It stays on for all streams and recordings."}}, {"@type": "Question", "name": "RNNoise or Speex — which should I pick?", "acceptedAnswer": {"@type": "Answer", "text": "RNNoise unless your CPU visibly cannot afford it; Speex is the lighter fallback with a manual suppression slider (default −30 dB)."}}, {"@type": "Question", "name": "Is there an OBS noise suppression plugin I should install?", "acceptedAnswer": {"@type": "Answer", "text": "Not for the basic job; RNNoise and Speex are built in. NVIDIA's audio effects SDK adds the Broadcast engine to the dropdown on RTX cards."}}, {"@type": "Question", "name": "Can I use OBS's noise suppression in Zoom or Teams?", "acceptedAnswer": {"@type": "Answer", "text": "Not directly; filters apply to OBS's own output. Routing it through a virtual audio cable works but a purpose-built virtual-mic tool is simpler."}}, {"@type": "Question", "name": "Noise Suppression, Noise Gate or Expander?", "acceptedAnswer": {"@type": "Answer", "text": "Suppression first; it removes noise while you talk. Gate or Expander act only in the pauses, so use them after suppression."}}]}</script>
 <link rel="canonical" href="https://freehush.com/free-tools/obs-noise-suppression/">
 </head>
 <body>
@@ -75,8 +44,8 @@
   <div class="bcrumb"><a href="../../">Home</a> / Free tools / OBS filter</div>
   <article class="rv">
     <div class="rvlogo"><span class="tlogo"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="12.6" fill="none" stroke="#fff" stroke-width="2.2"/><path d="M16 6.8a9.2 9.2 0 0 1 8 4.7l-4.9 1.3A5 5 0 0 0 16 10.8z" fill="#fff" stroke="#13261b" stroke-width="1" transform="rotate(0 16 16)"/><path d="M16 6.8a9.2 9.2 0 0 1 8 4.7l-4.9 1.3A5 5 0 0 0 16 10.8z" fill="#fff" stroke="#13261b" stroke-width="1" transform="rotate(120 16 16)"/><path d="M16 6.8a9.2 9.2 0 0 1 8 4.7l-4.9 1.3A5 5 0 0 0 16 10.8z" fill="#fff" stroke="#13261b" stroke-width="1" transform="rotate(240 16 16)"/></svg></span></div>
-    <h1>OBS's Noise Suppression Filter: The Free Tool You Already Installed</h1>
-    <p class="byline">By <b>the FreeHush crew</b> · Published July 28, 2026 · Last updated July 28, 2026</p>
+    <h1>OBS Noise Suppression: The Free RNNoise Filter You Already Installed</h1>
+    <p class="byline">By <b>the FreeHush crew</b> · Published July 28, 2026 · Last updated October 6, 2026</p>
 <div class="gorow"><a class="gobtn" href="../../go/krisp/" rel="sponsored nofollow">Skip the filter fiddling — try Krisp free</a><a class="gobtn alt" href="https://obsproject.com/">Get OBS free</a><span class="gonote">Green buttons may earn us a commission — your price never changes. Full disclosure in the footer.</span></div>
     
     <div class="vbox tg tg-pale">
@@ -96,7 +65,11 @@
       <tr><td data-h="">Limits, accounts, watermarks</td><td class="yes" data-h="OBS noise suppression">None</td></tr>
     </table></div>
 
-    <h2>How it holds up</h2>
+    <h2>Does OBS have noise suppression? Yes — no plugin needed</h2>
+<p>People search for an "OBS noise suppression plugin" and then install things they do not need. OBS Studio ships the filter itself: on every mic or audio source, the Filters menu offers <strong>Noise Suppression</strong> with a method dropdown, and the two methods inside it, <strong>RNNoise</strong> and <strong>Speex</strong>, are compiled into OBS on Windows, macOS and Linux. The only thing that arrives as a separate install is NVIDIA's engine, which appears as a third option once the Broadcast audio SDK is on an RTX machine. If a download site is offering you an "OBS noise suppression plugin" for the basic job, it is selling you a feature you already have.</p>
+<h2>RNNoise in OBS: what it is, and why it is the default</h2>
+<p>RNNoise is a small open-source neural network trained to separate speech from everything that is not speech. Inside OBS it has no settings at all, which is the point: pick it from the dropdown and it runs at full strength on the CPU, light enough that a modern laptop does not notice. It handles steady noise (fans, air conditioning, hum) and most moderate clatter (keyboard, mouse) well on a single voice, and its known weak spot is the same as every speech-preserving filter: a second voice in the room is speech, so it stays. The older Speex method exists for machines where even that CPU cost matters, and for people who want a slider; its default suppression level is −30 dB and it gets crude quickly past that.</p>
+<h2>How it holds up</h2>
     <p>From OBS documentation and the two algorithms' known shapes:</p>
     <p><strong>RNNoise for voice streams:</strong> the default recommendation. It's a small neural model tuned for speech; steady noise and moderate clatter drop away convincingly, and the CPU cost is light enough to ignore on anything modern. For a talking-head stream or tutorial recording, it's routinely all you need.</p>
     <p><strong>Speex when CPU is precious:</strong> the older method with an adjustable suppression level — noticeably lighter, noticeably cruder. It's the right pick on genuinely weak hardware, wrong pick if quality matters more than frames.</p>
@@ -123,9 +96,21 @@
 <h2>RNNoise vs Speex vs NVIDIA: picking the method</h2>
 <p>The filter's dropdown hides three different engines. <strong>RNNoise</strong> is the default and the right answer for most people: AI-based, zero configuration, paid for in a little CPU. <strong>Speex</strong> is the lightweight classic — it adds a suppression slider (default −30 dB) and costs almost nothing, but push the slider hard and it starts eating consonants; move it in small steps. <strong>NVIDIA Noise Removal</strong> appears if you have an RTX card with the Broadcast SDK installed — it's the <a href="../nvidia-broadcast/">Broadcast engine</a> living inside OBS, GPU-billed, and the pick when only OBS needs cleanup and you'd rather not run the separate app.</p>
 <h2>Filter order: the part everyone gets wrong</h2>
-<p>OBS applies filters top-to-bottom, and the order changes the result. Noise Suppression goes <em>first</em> — let it lower the floor. A Noise Gate goes after it, with an easier job now that the floor is quiet. Compressors and limiters come last; compress before suppressing and you've amplified the exact hiss you're trying to delete. Drag to reorder in the Filters list. And remember the scope: this chain cleans your <em>stream and recordings</em> — your meeting apps never hear OBS filters. For calls, that's <a href="../krisp-free/">Krisp free</a> or your app's built-in toggle, compared in the <a href="../../best-free/desktop-noise-cancellation/">desktop roundup</a>.</p>
+<p>OBS applies filters top-to-bottom, and the order changes the result. Noise Suppression goes <em>first</em> — let it lower the floor. A Noise Gate — or OBS's gentler <strong>Expander</strong> filter, which turns the floor down instead of slamming it shut — goes after it, with an easier job now that the floor is quiet. Compressors and limiters come last; compress before suppressing and you've amplified the exact hiss you're trying to delete. Drag to reorder in the Filters list. And remember the scope: this chain cleans your <em>stream and recordings</em> — your meeting apps never hear OBS filters. For calls, that's <a href="../krisp-free/">Krisp free</a> or your app's built-in toggle, compared in the <a href="../../best-free/desktop-noise-cancellation/">desktop roundup</a>.</p>
 <h2>Quick questions</h2>
     <div class="faq2">
+      <details>
+        <summary>How do I add noise suppression to OBS?</summary>
+        <p>Audio Mixer → the ⋮ on your mic source → Filters → + → Noise Suppression → choose RNNoise. Close the window; the filter stays on for every stream and recording from then on. No plugin and no restart.</p>
+      </details>
+      <details>
+        <summary>Is there an OBS noise suppression plugin I should install?</summary>
+        <p>Not for the basic job — RNNoise and Speex are built into OBS. The only add-on worth knowing is NVIDIA's audio effects SDK, which puts the Broadcast engine into the same dropdown on RTX cards.</p>
+      </details>
+      <details>
+        <summary>Noise Suppression, Noise Gate or Expander — which one?</summary>
+        <p>Suppression first, always; it removes noise while you talk. A Gate or Expander only acts in the pauses. Use Suppression plus an Expander for a natural result, and keep the Gate for rooms where something loud starts when you stop speaking.</p>
+      </details>
       <details>
         <summary>Can I use OBS's noise suppression in Zoom or Teams?</summary>
         <p>Not directly — filters apply to OBS's own output. It can be done by sending OBS audio through a virtual audio cable that the meeting app selects as its mic, but at that point a purpose-built virtual-mic tool is simpler.</p>
