@@ -5,3 +5,4 @@ DESIGN.md
 tools/
 *.md
 .DS_Store
+*.new.html
